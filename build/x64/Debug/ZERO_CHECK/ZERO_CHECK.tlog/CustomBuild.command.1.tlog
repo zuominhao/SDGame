@@ -1,0 +1,10 @@
+^C:\USERS\JR1\MINHAO\C++\SDGAME\BUILD\CMAKEFILES\E63FD8F437B089908B2AD4549C7BEB8B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/JR1/minhao/C++/SDGame -BC:/Users/JR1/minhao/C++/SDGame/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/JR1/minhao/C++/SDGame/build/MyProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,34 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake
+C:/Users/JR1/minhao/C++/SDGame/CMakeLists.txt
+C:/Users/JR1/minhao/C++/SDGame/build/CMakeFiles/3.28.1/CMakeCCompiler.cmake
+C:/Users/JR1/minhao/C++/SDGame/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake
+C:/Users/JR1/minhao/C++/SDGame/build/CMakeFiles/3.28.1/CMakeRCCompiler.cmake
+C:/Users/JR1/minhao/C++/SDGame/build/CMakeFiles/3.28.1/CMakeSystem.cmake
+C:/Users/JR1/vcpkg/installed/x64-windows/share/sfml/SFMLConfig.cmake
+C:/Users/JR1/vcpkg/installed/x64-windows/share/sfml/SFMLConfigDependencies.cmake
+C:/Users/JR1/vcpkg/installed/x64-windows/share/sfml/SFMLConfigVersion.cmake
+C:/Users/JR1/vcpkg/installed/x64-windows/share/sfml/SFMLSharedTargets-debug.cmake
+C:/Users/JR1/vcpkg/installed/x64-windows/share/sfml/SFMLSharedTargets-release.cmake
+C:/Users/JR1/vcpkg/installed/x64-windows/share/sfml/SFMLSharedTargets.cmake
+C:/Users/JR1/vcpkg/scripts/buildsystems/vcpkg.cmake
