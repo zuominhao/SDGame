@@ -54,6 +54,20 @@ int main() {
   bool jumping = false;   // 标记是否正在跳跃
   bool gameover = false;  // 标记游戏是否结束
   int restartCount = 0;   // 记录重新开始的次数
+  int score = 0;          // 记录分数
+
+  // 字体设置
+  sf::Font font;
+  if (!font.loadFromFile("arial.ttf")) {
+    // 处理字体加载失败的情况
+  }
+  // 分数文本
+  sf::Text scoreText;
+  scoreText.setFont(font);
+  scoreText.setCharacterSize(24);
+  scoreText.setFillColor(sf::Color::Black);
+  scoreText.setPosition(window.getSize().x - 120, 10);
+  scoreText.setString("Score: 0");  // 初始文本内容为 "Score: 0"
 
   while (window.isOpen()) {
     sf::Event event;
@@ -79,7 +93,7 @@ int main() {
           gameover = false;
           shape.setPosition(0.f, 450.f);  // 设置球的初始位置
           hiddenBlock.setFillColor(
-          sf::Color::Transparent);  // 隐藏方块颜色设置为透明
+              sf::Color::Transparent);  // 隐藏方块颜色设置为透明
           blockVisible = false;         // 重新设置方块不可见
         }
       }
@@ -102,6 +116,17 @@ int main() {
       jumping = false;
     }
 
+    // 检查球是否成功跳过树
+    if (pos.x > tree1.getPoint(2).x && jumping &&pos.x < tree1.getPoint(0).x) {
+      jumping=false;
+      // 如果球的 x 坐标超过了树1的右侧，则说明球成功跳过了树
+      // 增加分数
+      score += 10;
+      // 更新分数文本
+      std::string scoreString = "Score: " + std::to_string(score);
+      scoreText.setString(scoreString);
+    }
+
     // 检查球是否与树1、2 树干碰撞
     if (pos.x + shape.getRadius() >= tree1.getPoint(2).x &&
         pos.x <= tree1.getPoint(1).x) {
@@ -117,12 +142,14 @@ int main() {
     }
 
     // 检查球是否与隐藏方块碰撞，并显示方块
-    if (!blockVisible && pos.x + shape.getRadius() >= hiddenBlock.getPosition().x &&
+    if (!blockVisible &&
+        pos.x + shape.getRadius() >= hiddenBlock.getPosition().x &&
         pos.x <= hiddenBlock.getPosition().x + hiddenBlock.getSize().x &&
         pos.y + shape.getRadius() >= hiddenBlock.getPosition().y &&
         pos.y <= hiddenBlock.getPosition().y + hiddenBlock.getSize().y) {
       blockVisible = true;
-      hiddenBlock.setFillColor(sf::Color::Yellow); // 设置方块颜色为绿色，显示方块
+      hiddenBlock.setFillColor(
+          sf::Color::Yellow);  // 设置方块颜色为绿色，显示方块
     }
 
     if (gameover) {
@@ -151,6 +178,7 @@ int main() {
       window.draw(tree2);              // 绘制树2
       window.draw(trunk);              // 绘制树干
       window.draw(shape);              // 绘制黑球
+      window.draw(scoreText);          // 分数
       window.display();
     }
   }
