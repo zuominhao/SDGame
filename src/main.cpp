@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
-#include <iostream>
+
+#include "save.hpp"
 
 int main() {
   sf::RenderWindow window(sf::VideoMode(800, 600), "SDGame");
@@ -117,8 +118,8 @@ int main() {
     }
 
     // 检查球是否成功跳过树
-    if (pos.x > tree1.getPoint(2).x && jumping &&pos.x < tree1.getPoint(0).x) {
-      jumping=false;
+    if (pos.x > tree1.getPoint(2).x && jumping && pos.x < tree1.getPoint(0).x) {
+      jumping = false;
       // 如果球的 x 坐标超过了树1的右侧，则说明球成功跳过了树
       // 增加分数
       score += 10;
@@ -182,6 +183,10 @@ int main() {
       window.display();
     }
   }
+  // // 输出加载后的游戏状态
+  //   std::cout << "Loaded score: " << score << std::endl;
+  //   std::cout << "Loaded position: (" << posX << ", " << posY << ")" <<
+  //   std::endl;
 
   return 0;
 }
