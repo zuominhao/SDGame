@@ -362,7 +362,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="C:\Users\JR1\minhao\C++\SDGame\src\background.hpp" />
+    <ClInclude Include="C:\Users\JR1\minhao\C++\SDGame\src\block.hpp" />
+    <ClInclude Include="C:\Users\JR1\minhao\C++\SDGame\src\line.hpp" />
     <ClCompile Include="C:\Users\JR1\minhao\C++\SDGame\src\main.cpp" />
+    <ClInclude Include="C:\Users\JR1\minhao\C++\SDGame\src\save.hpp" />
+    <ClInclude Include="C:\Users\JR1\minhao\C++\SDGame\src\score.hpp" />
+    <ClInclude Include="C:\Users\JR1\minhao\C++\SDGame\src\superMario.hpp" />
+    <ClInclude Include="C:\Users\JR1\minhao\C++\SDGame\src\tree.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\JR1\minhao\C++\SDGame\build\ZERO_CHECK.vcxproj">
